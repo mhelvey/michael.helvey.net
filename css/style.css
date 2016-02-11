@@ -36,7 +36,15 @@ header {
 }
 .nav_link:hover {
   border-bottom: 2px solid #ff9900;
+  margin-bottom: -2px;
 }
 .toggle_nav {
   display: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
 }
