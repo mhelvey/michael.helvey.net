@@ -3,3 +3,42 @@
 @LightGrey: #E9E9E9;
 @Highlight: #FF9900;
 @MainBlue: #3299BB;
+
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  background-color: @MainBlue;
+  color: @LightGrey;
+  padding: 15px 0 15px 0; }
+
+.flex_nav {
+  background-color: @MainBlue; }
+.flex_nav ul {
+  display: flex;
+  justify-content: flex-end; }
+.flex_nav li {
+  padding: 10px; }
+
+.nav_link {
+  color: @LightGrey;
+  transition: border-bottom 0.2s ease;
+  display: inline-block;
+  text-align: center; }
+
+.nav_link:hover {
+  border-bottom: 2px solid @Highlight; }
+
+.toggle_nav {
+  display: none; }
