@@ -24,6 +24,7 @@ header {
 .flex_nav ul {
   display: flex;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 .flex_nav li {
   padding: 10px;
