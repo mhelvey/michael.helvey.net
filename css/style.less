@@ -12,7 +12,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   background-color: @MedGrey;
   display: flex;
@@ -34,13 +34,19 @@ header {
 
 .nav_link {
   color: @LightGrey;
-  transition: border-bottom 0.2s ease;
+  transition: border-bottom 0.1s ease;
   display: inline-block;
-  text-align: center;  }
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
 
 .nav_link:hover {
-  border-bottom: 2px solid @Highlight;
-  margin-bottom: -2px;}
+  color: @Highlight;
+  border-bottom: 3px solid @Highlight;
+  padding-bottom: 4px;
+  margin-bottom: -7px;
+   }
 
 .toggle_nav {
   display: none; }
