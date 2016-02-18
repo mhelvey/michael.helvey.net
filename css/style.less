@@ -1,8 +1,8 @@
-@MedGrey: #BCBCBC;
-@DarkGrey: #424242;
-@LightGrey: #E9E9E9;
-@Highlight: #FF9900;
-@MainBlue: #3299BB;
+@Grey: #606D80;
+@Dark: #1F1F20;
+@Light: #DCE0E6;
+@Secondary: #567EBB;
+@Main: #2B4C7E;
 
 
 html {
@@ -14,24 +14,24 @@ html {
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
-  background-color: @MedGrey;
+  background-color: @Light;
   display: flex;
   flex-direction: column; }
 
 header {
-  background-color: @MainBlue;
-  color: @LightGrey;
+  background-color: @Main;
+  color: @Light;
   padding: 15px 0 15px 0; }
 
 .flex_nav {
-  background-color: @MainBlue; }
+  background-color: @Main; }
 .flex_nav ul {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
 }
 .flex_nav li {
-  //padding: 10px;
+  //padding: 5px;
 }
 
 .toggle_nav {
@@ -47,50 +47,10 @@ a {
 h1 {
   text-align: center }
 
-.button {
-  display: inline-block;
-  padding: 1em;
-  background-color: #79BD9A;
-  text-decoration: none;
-  color: white;
-}
 
-
-.navigation_link {
-  display: inline-block;
-  position: relative;
-  color: @LightGrey;
-  border-color: @DarkGrey;
-  border-width: 1px;
-  padding-bottom: 2px;
-  text-align: center;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-.navigation_link:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 2px;
-  width: 0px;
-  padding-right: 5px;
-  padding-left: 5px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-  border-color: @DarkGrey;
-  border-width: 1px;
-}
-.navigation_link:hover:after {
-  width: 100%;
-  background: @Highlight;
-  padding-right: 5px;
-  padding-left: 5px;
-  border-color: @DarkGrey;
-  border-width: 1px;
-}
 
 /* Underline From Center */
-.hvr-underline-from-center {
+.nav_link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -101,16 +61,18 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
+  padding: 7px;
+  color: @Light
 }
-.hvr-underline-from-center:before {
+.nav_link:before {
   content: "";
   position: absolute;
   z-index: -1;
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: @Highlight;
-  height: 4px;
+  background: @Secondary;
+  height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -118,9 +80,12 @@ h1 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+.nav_link:hover:before, .nav_link:focus:before, .nav_link:active:before {
   left: 0;
   right: 0;
+}
+.nav_link.active{
+  background-color: @Secondary;
 }
 
 

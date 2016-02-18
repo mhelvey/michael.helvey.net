@@ -1,14 +1,14 @@
-@MedGrey: #BCBCBC;
-@DarkGrey: #424242;
-@LightGrey: #E9E9E9;
-@Highlight: #FF9900;
-@MainBlue: #3299BB;
+@Grey: #606D80;
+@Dark: #1F1F20;
+@Light: #DCE0E6;
+@Secondary: #567EBB;
+@Main: #2B4C7E;
 
 //Sliding Navigation Underline
 .sliding {
   display: inline-block;
   position: relative;
-  color: @LightGrey;
+  color: @Light;
   padding-bottom: 2px;
   text-align: center;
   padding-right: 5px;
@@ -32,16 +32,49 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background: @Highlight;
+  background: @Secondary;
   transition: width .5s ease;
 }
 .sliding:hover:before {
   width: 100%;
-  background: @Highlight;
+  background: @Secondary;
   transition: width .5s ease;
 }
 .sliding:hover:after {
   width: 100%;
   background: transparent;
   transition: all 0s ease;
+}
+
+.old_underline {
+  display: inline-block;
+  position: relative;
+  color: @Light;
+  border-color: @Dark;
+  border-width: 1px;
+  padding-bottom: 2px;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.old_underline:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  border-color: @Dark;
+  border-width: 1px;
+}
+.old_underline:hover:after {
+  width: 100%;
+  background: @Secondary;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-color: @Dark;
+  border-width: 1px;
 }
