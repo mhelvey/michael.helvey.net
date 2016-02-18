@@ -76,6 +76,7 @@ h1 {
   left: 0;
   right: 0;
 }
-.nav_link.active {
+.nav_link.current {
+  border-color: #567ebb;
   background-color: #567ebb;
 }
