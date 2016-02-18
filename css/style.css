@@ -52,6 +52,8 @@ h1 {
   position: relative;
   overflow: hidden;
   padding: 7px;
+  padding-right: 9px;
+  padding-left: 9px;
   color: #dce0e6;
 }
 .nav_link:before {
