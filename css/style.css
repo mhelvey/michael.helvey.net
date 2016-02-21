@@ -20,6 +20,8 @@ header {
 }
 .flex_nav {
   background-color: #2b4c7e;
+  display: flex;
+  justify-content: space-between;
 }
 .flex_nav ul {
   display: flex;
@@ -51,7 +53,7 @@ h1 {
 .my-logo:hover {
   background-image: url("../img/icon-dark.png");
 }
-/* Underline From Center */
+/* Underline From Center from hover.css - http://ianlunn.co.uk/portfolio/hover-css/ */
 .nav_link {
   display: inline-block;
   vertical-align: middle;
