@@ -24,9 +24,11 @@ header {
   justify-content: space-between;
 }
 .flex_nav ul {
-  display: flex;
-  justify-content: flex-end;
+  display: inline;
   margin-right: 10px;
+}
+.flex_nav li {
+  display: inline-block;
 }
 .toggle_nav {
   display: none;
@@ -42,8 +44,6 @@ h1 {
   text-align: center;
 }
 .my-logo {
-  display: flex;
-  justify-content: flex-start;
   background-image: url("../img/icon-light.png");
   width: 82px;
   height: 56px;
